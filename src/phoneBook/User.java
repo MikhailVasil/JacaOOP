@@ -74,20 +74,9 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
-                "firstName='" + firstName + '\'' +
-                ", secondName='" + secondName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", dateOfBirth=" + dateOfBirth +
-                ", numberMobile='" + numberMobile + '\'' +
-                ", gender=" + gender +
-                '}';
+        //<Фамилия><Имя><Отчество><дата рождения><номер телефона><пол>
+        return "<" + getFirstName() + "><" + getSecondName() + "><" + getLastName()
+                + "><" + getDateOfBirth() + "><" + getNumberMobile() + "><"
+                + getGender() + ">";
     }
-//    @Override
-//    public String toString() {
-//        //<Фамилия><Имя><Отчество><дата рождения><номер телефона><пол>
-//        return "<" + getFirstName() + "><" + getSecondName() + "><" + getLastName()
-//                + "><" + getDateOfBirth() + "><" + getNumberMobile() + "><"
-//                + getGender() + ">";
-//    }
 }
